@@ -14,7 +14,7 @@ def menu():
 def cryptIt(phrase):
     result = ""
     for i in range(97, 123):
-        alphabet.append(chr(i))  # Add all of letters of the alphabet list
+        alphabet.append(chr(i)) #Add all of letters of the alphabet list
     for i in phrase:  # For each letter in the phrase...
         if i != ' ':  # and when that letter is NOT a space
             if (alphabet.index(i) + key) < len(alphabet):  # and that letter, when shifted, does not fall out of our list
